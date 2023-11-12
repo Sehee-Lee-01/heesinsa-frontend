@@ -4,6 +4,7 @@ import {Col, Row} from "react-bootstrap";
 export function Product(props) {
     const productId = props.id;
     const productName = props.name;
+    const productDescription = props.description;
     const category = props.category;
     const price = props.price;
 
@@ -17,8 +18,9 @@ export function Product(props) {
                    alt=""/>
         </Col>
         <Col xs={6}>
-            <div className="row text-muted">{category}</div>
-            <div className="row">{productName}</div>
+            <Row className="fw-bold">{productName}</Row>
+            <Row >{productDescription}</Row>
+            <Row className="text-muted" >category: {category}</Row>
         </Col>
         <Col>{price}원</Col>
         <Col>

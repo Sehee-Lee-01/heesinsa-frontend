@@ -9,8 +9,6 @@ export function Order(props) {
     const address = props.address;
     const postcode = props.postcode;
     const orderStatus = props.orderStatus;
-    const updatedAt = new Date(props.updatedAt);
-
 
     return <>
         <Col xs={3}>{orderId}</Col>
